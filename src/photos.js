@@ -9,7 +9,6 @@ async function getPhotos(productId, ownerMemberId, totalPages) {
 
     for (let currentPage = 1; currentPage <= totalPages; currentPage++) {
       const feedbackUrl = `https://feedback.aliexpress.com/display/productEvaluation.htm?v=2&page=${currentPage}&currentPage=${currentPage}&productId=${productId}&ownerMemberId=${ownerMemberId}&withPictures=true`;
-      console.log(feedbackUrl)
       var cookies = [
         {
           "name": "ali_apache_id",
